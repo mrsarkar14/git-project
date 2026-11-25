@@ -91,6 +91,20 @@
       font-size: 0.88rem;
     }
 
+    nav { display: flex; justify-content: center; gap: 10px; margin-top: 28px; }
+    nav a {
+      padding: 10px 15px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--green);
+      font-size: 0.9rem;
+      font-weight: 650;
+      text-decoration: none;
+      transition: background 160ms ease, border-color 160ms ease;
+    }
+    nav a:hover, nav a:focus-visible { background: #e9f0e5; border-color: #c9d8ca; }
+    nav a:focus-visible { outline: 3px solid #9bbda4; outline-offset: 3px; }
+
     @media (prefers-reduced-motion: no-preference) {
       .card { animation: arrive 650ms cubic-bezier(.2,.75,.25,1) both; }
       @keyframes arrive {
@@ -108,6 +122,10 @@
     <p class="message">It’s lovely to have you here. Take a breath, get comfortable, and enjoy this little corner of the internet.</p>
     <div class="divider" aria-hidden="true"></div>
     <p class="note">Made with a little warmth and a lot of curiosity.</p>
+    <nav aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </main>
 </body>
 </html>
